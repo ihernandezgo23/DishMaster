@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: MonoBold;
+    src: url(/fonts/SpaceMono-Bold.ttf);
+}
+@font-face {
+    font-family: MonoBoldItalic;
+    src: url(/fonts/SpaceMono-BoldItalic.ttf);
+}
+@font-face {
+    font-family: MonoItalic;
+    src: url(/fonts/SpaceMono-Italic.ttf);
+}
+@font-face {
+    font-family: MonoRegular;
+    src: url(/fonts/SpaceMono-Regular.ttf);
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFBD59;
+    font-family: MonoRegular;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2%;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    font-family: MonoBoldItalic;
+}
+
+header h1{
+    text-align: center;
+    width: 80%;
+    background-color: #222222;
+    color: white;
+    border-radius: 15px;
+    padding: 1%;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    margin-top: 4%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#info-box{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 2%;
+    border-radius: 10px;
+
+}
+#info-box img{
+    margin-top: 3%;
+    align-self: center;
+    width: 15%;
+}
+#plans{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    width: 90%;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#offers{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+    background-color: #222222;
+    border-style: dashed;
+    border-radius: 50% 20% / 10% 40%;
+}
+#offers span{
+    margin-top: 3%;
+    color: #FFBD59;
+    font-size: 2em;
+    font-style: bold;
+
+}
+#offers p{
+    margin-top: 3%;
+}
+#offers a{
+    font-family: MonoRegular;
+    width: 60%;
+    margin-top: 5%;
+    
+    background-color: #FFBD59;
+    
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#offers button{
+    width: 70%;
+    font-size: 1.5em;
+    border-style: none;
+    background-color: #FFBD59;
+}
+
+#offers a:hover{
+    background-color: #ffffff;
+    color: #FFBD59;
+}
+
+#offers a:hover button{
+    background-color: #ffffff;
+    color: #FFBD59;
+}
+
+#action-menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 30%;
+}
+#action-menu a{
+    display: flex;
+    justify-content: center;
+}
+#action-menu img{
+    max-width: 20%;
+}
+
+footer{
+    margin-top: 5%;
+    flex-direction: row;
+    background-color: #b88841;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+footer p{
+    margin-top: 1%;
+}
+footer img{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 5%;
+}

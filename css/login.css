@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: MonoRegular;
+}
+@font-face {
+    font-family: MonoBold;
+    src: url(/fonts/SpaceMono-Bold.ttf);
+}
+@font-face {
+    font-family: MonoBoldItalic;
+    src: url(/fonts/SpaceMono-BoldItalic.ttf);
+}
+@font-face {
+    font-family: MonoItalic;
+    src: url(/fonts/SpaceMono-Italic.ttf);
+}
+@font-face {
+    font-family: MonoRegular;
+    src: url(/fonts/SpaceMono-Regular.ttf);
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFBD59;
+}
+#header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+#center{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 2%;
+    background-color: #222222;
+    padding: 2%;
+    border-radius: 15px;
+    color: white;
+}
+#center h2{
+    font-size: 4em;
+    font-family: MonoBoldItalic;
+    margin-bottom: -5%;
+
+}
+#center p{
+    font-size: 2em;
+    margin-top: 7%;
+}
+
+#buttons{
+    display: flex;
+    width: 100%;
+    margin-top: 7%;
+    justify-content: space-around;
+
+}
+#buttons input{
+    width: 40%;
+    font-size: 1.5em;
+}
+
+
+footer{
+    position: fixed;
+    flex-direction: row;
+    background-color: #b88841;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+footer p{
+    margin-top: 1%;
+}
+footer img{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    width: 4%;
+}
