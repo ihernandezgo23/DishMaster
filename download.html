@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish Master -- Download</title>
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="icon" type="image/x-icon" href="/img/Fork(1).png">
+</head>
+<body>
+    <header>
+        <h1>CONGRATULATIONS!!</h1>
+        <h2>YOU CAN NOW DOWNLOAD DISH MASTER FOR YOUR PC</h2>
+    </header>
+
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+
+
+    <section>
+        <button onclick="download('jar/1.TALDEA-Ibai-Ivan-Xabier.jar')" target="_blank" id="opsys">
+            <h1>Download for Windows</h1>
+            <img src="img/icons8-windows-50.png" alt="">
+        </button>
+        <button id="opsys">
+            <h1>Download for Ubuntu</h1>
+            <img src="img/icons8-ubuntu-50.png" alt="">
+        </button>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const fireworks = document.querySelectorAll('.firework');
+          
+          fireworks.forEach(firework => {
+            firework.addEventListener('animationend', function() {
+              firework.style.display = 'none';
+            });
+          });
+        });
+
+        function download(url) {
+            document.getElementById("footer").style.visibility = "visible";
+            window.open(url);
+        }
+      </script>
+      
+      <footer id="footer">
+          <a href="index.html"><img src="img/icons8-home-48(1).png" alt=""></a>
+      </footer>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish Master -- Order</title>
+    <link rel="stylesheet" href="css/order.css">
+    <script src="js/animations.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/Fork(1).png">
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"><img src="img/white_fork_logo-removebg-preview.png" alt=""></a>
+    </div>
+    <div id="center">
+        <h2>PAYMENT</h2>
+        <p>User Name</p>
+        <input type="text" id="name">
+        <p>Password</p>
+        <input type="password" id="pass">
+        <p>Card Number</p>
+        <input class="cc-number" type="tel" pattern="\d*" maxlength="19" id="cardNumber">
+        <p>Card Caducity</p>
+        <input class="cc-expires" type="tel" pattern="\d*" maxlength="5" placeholder="MM / YY" id="cardDate">
+        <p>CVC</p>
+        <input class="cc-cvc" type="tel" pattern="\d*" maxlength="3" placeholder="CVC" id="cvc">
+        <div id="buttons">
+            <button type="submit" onclick="download()" id="paynow">Pay Now</button>
+        </div>
+        <!-- 
+        <div class="loader">
+
+        </div>
+        -->
+    </div>
+    <footer>
+        <p>©Dish Master -- Official Licence 2024</p>
+    </footer>
+    <script>
+        function download(){
+            let izena = document.getElementById("name").value;
+            let pass = document.getElementById("pass").value;
+            let cardNumber = document.getElementById("cardNumber").value;
+            let cardDate = document.getElementById("cardDate").value;
+            let cvc = document.getElementById("cvc").value;
+
+            if(izena === "" || pass === "" || cardDate === "" || cardNumber === "" || cvc === ""){
+                confirm("For downloading our Application, you must not leave any empty fields!");
+            }
+            else{
+                load_page("./download.html");
+                //window.open(url);
+            }
+
+            
+        }
+        function load_page(page){
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
