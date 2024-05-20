@@ -136,7 +136,7 @@ section{
 #action-menu{
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 3%;
     width: 30%;
 }
 #action-menu a{
@@ -148,10 +148,14 @@ section{
 }
 
 footer{
-    margin-top: 6.75%;
+    margin-top: 4.2%;
     flex-direction: row;
     background-color: #b88841;
     width: 100%;
     text-align: center;
     bottom: 0;
+}
+footer p{
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
