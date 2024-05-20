@@ -1,1 +1,0 @@
-sudo java -jar ./Dishmaster_V0.8.jar
