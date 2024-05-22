@@ -1,1 +1,1 @@
-sudo java -jar ./Dishmaster_V1.0.jar
+sudo java -jar ./Dishmaster_V1.2.jar
